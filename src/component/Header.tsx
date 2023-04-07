@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { HeaderContainer } from '../style/header/header'
+
 function Header() {
-  return (
-    <div>Header</div>
-  )
+    return (
+        <HeaderContainer>Header</HeaderContainer>
+    )
 }
 
 export default Header

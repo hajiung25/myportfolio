@@ -1,10 +1,13 @@
-import React from 'react'
-
 import { MainContainer } from '../style/main/main'
+import WordCloud from '../component/main/WordCloud';
+import MouseTrail from '../component/main/MouseTrail';
 
 function Main() {
     return (
-        <MainContainer></MainContainer>
+        <MainContainer>
+            <WordCloud></WordCloud>
+            <MouseTrail></MouseTrail>
+        </MainContainer>
     )
 }
 

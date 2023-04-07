@@ -1,4 +1,5 @@
 import './style/GlobalStyle.css'
+import './style/variables.css';
 import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
