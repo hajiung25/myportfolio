@@ -1,41 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { wordsEn } from "../../assets/word";
-import ReactWordcloud from "react-wordcloud";
+import ReactWordcloud, {Callbacks, OptionsProp} from "react-wordcloud";
 import {
   ReactWordcloudContainer,
 } from "../../style/main/wordcloud";
 
-interface Option {
-  colors: string[],
-  enableTooltip: boolean,
-  deterministic: boolean,
-  fontFamily: string,
-  fontSizes: [number, number],
-  fontStyle: string,
-  fontWeight: string,
-  padding: number,
-  rotations: number,
-  scale: string | any,
-  transitionDuration: number,
-  overflow: string
-}
-
 function WordCloud() {
   const [changeWordcloud, setChangeWordcloud] = useState<boolean>(true)
-  const options: Option = {
+  const options: OptionsProp = {
     colors: ["#fff"],
-    enableTooltip: false,
     deterministic: changeWordcloud,
+    enableTooltip: false,
     fontFamily: "impact",
-    fontSizes: [5, 185],
+    fontSizes: [5, 200],
     fontStyle: "normal",
     fontWeight: "normal",
     padding: 3,
-    rotations: 8,
+    rotations: 3,
     scale: "log",
+    spiral: 'archimedean',
+    randomSeed: 'plzqwe',
     transitionDuration: 1000,
-    overflow: "hidden",
-  };
+  }
+
   return (
     <ReactWordcloudContainer>
       <ReactWordcloud
@@ -46,14 +33,10 @@ function WordCloud() {
           onWordClick: () => {
             setChangeWordcloud(prev => !prev)
           },
-          onWordMouseOver: (word) =>{
-            console.log(word)
-          }
-
         }}
       />
     </ReactWordcloudContainer>
   );
 }
 
-export default WordCloud;
+export default React.memo(WordCloud);

@@ -5,16 +5,25 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Main from './page/Main';
 import Header from './component/Header';
-import Footer from './component/Footer';
+import { useEffect, useState } from 'react';
+import Loading from './page/Loading';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 7000)
+  }, [])
   return (
     <>
+    {
+      isLoading ? <Loading></Loading> : null
+    }
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />
       </Routes>
-      <Footer />
     </>
   );
 }

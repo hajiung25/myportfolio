@@ -1,7 +1,12 @@
-export const wordsEn = [
+interface Datum {
+    text: string;
+    value: number;
+  }
+
+export const wordsEn:Datum[]= [
     {
         text: 'HAJIUNG',
-        value: 1000,
+        value: 5000,
     },
     {
         text: 'told',
@@ -504,3 +509,26 @@ export const wordsEn = [
         value: 10,
     },
 ];
+
+export const loadingWords = [
+    {
+        text: 'FRONTEND',
+        key: 5
+    },
+    {
+        text: 'UNIQUE',
+        key: 4
+    },
+    {
+        text: 'SMART',
+        key: 3
+    },
+    {
+        text: 'LOVE',
+        key: 2
+    },
+    {
+        text: 'YOU',
+        key: 1
+    },
+]
