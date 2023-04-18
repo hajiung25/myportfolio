@@ -85,8 +85,9 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: var(--color1);
+  background-color: var(--color3);
   color: var(--color9);
+  font-size: 62.5%;
 }
 html {
   /* ************************************************************

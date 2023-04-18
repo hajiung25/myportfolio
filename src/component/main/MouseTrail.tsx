@@ -9,7 +9,7 @@ function MouseTrail(props: { setHandleMouseMoveState: any }) {
   const [canvasHeight, setCanvasHeight] = useState<any>(0);
   const [isMouseOut, setIsMouseOut] = useState<boolean>(true)
 
-  const MAX_TRAIL_LENGTH = 50;
+  const MAX_TRAIL_LENGTH = 20;
   const TRAIL_REMOVE_DELAY = 10;
 
   useEffect(() => {
@@ -34,7 +34,7 @@ function MouseTrail(props: { setHandleMouseMoveState: any }) {
       gradient.addColorStop(0, '#00F260');
       gradient.addColorStop(1, '#0575E6');
 
-      ctx.lineWidth = 2;
+      ctx.lineWidth = 10;
       ctx.strokeStyle = gradient;
 
       ctx.beginPath();

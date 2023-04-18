@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw - 150px) ;
+    height: 100%;
     background-color: var(--color3);
+    position: absolute;
+    right: 0;
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+    }
 `

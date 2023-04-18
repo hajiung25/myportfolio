@@ -38,7 +38,7 @@ export const LoadingMessageContainer = styled.div<{ delaySecond: number }>`
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 1000;
 `
 
 export const LoadingMessageIM = styled.div`
@@ -46,6 +46,7 @@ export const LoadingMessageIM = styled.div`
     font-weight: 700;
     text-align: center;
     width: 500px;
+    margin-left: 150px;
 `
 
 export const LoadingMessageWhoAmI = styled.div`

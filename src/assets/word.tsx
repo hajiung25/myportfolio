@@ -1,534 +1,124 @@
 interface Datum {
     text: string;
     value: number;
-  }
+}
 
-export const wordsEn:Datum[]= [
+export const wordsEn: Datum[] = [
     {
         text: 'HAJIUNG',
         value: 5000,
     },
-    {
-        text: 'told',
-        value: 64,
-    },
-    {
-        text: 'mistake',
-        value: 11,
-    },
-    {
-        text: 'thought',
-        value: 16,
-    },
-    {
-        text: 'bad',
-        value: 17,
-    },
-    {
-        text: 'correct',
-        value: 10,
-    },
-    {
-        text: 'day',
-        value: 54,
-    },
-    {
-        text: 'prescription',
-        value: 12,
-    },
-    {
-        text: 'time',
-        value: 77,
-    },
-    {
-        text: 'thing',
-        value: 45,
-    },
-    {
-        text: 'left',
-        value: 19,
-    },
-    {
-        text: 'pay',
-        value: 13,
-    },
-    {
-        text: 'people',
-        value: 32,
-    },
-    {
-        text: 'month',
-        value: 22,
-    },
-    {
-        text: 'again',
-        value: 35,
-    },
-    {
-        text: 'review',
-        value: 24,
-    },
-    {
-        text: 'call',
-        value: 38,
-    },
-    {
-        text: 'doctor',
-        value: 70,
-    },
-    {
-        text: 'asked',
-        value: 26,
-    },
-    {
-        text: 'finally',
-        value: 14,
-    },
-    {
-        text: 'insurance',
-        value: 29,
-    },
-    {
-        text: 'week',
-        value: 41,
-    },
-    {
-        text: 'called',
-        value: 49,
-    },
-    {
-        text: 'problem',
-        value: 20,
-    },
-    {
-        text: 'going',
-        value: 59,
-    },
-    {
-        text: 'help',
-        value: 49,
-    },
-    {
-        text: 'felt',
-        value: 45,
-    },
-    {
-        text: 'discomfort',
-        value: 11,
-    },
-    {
-        text: 'lower',
-        value: 22,
-    },
-    {
-        text: 'severe',
-        value: 12,
-    },
-    {
-        text: 'free',
-        value: 38,
-    },
-    {
-        text: 'better',
-        value: 54,
-    },
-    {
-        text: 'muscle',
-        value: 14,
-    },
-    {
-        text: 'neck',
-        value: 41,
-    },
-    {
-        text: 'root',
-        value: 24,
-    },
-    {
-        text: 'adjustment',
-        value: 16,
-    },
-    {
-        text: 'therapy',
-        value: 29,
-    },
-    {
-        text: 'injury',
-        value: 20,
-    },
-    {
-        text: 'excruciating',
-        value: 10,
-    },
-    {
-        text: 'chronic',
-        value: 13,
-    },
-    {
-        text: 'chiropractor',
-        value: 35,
-    },
-    {
-        text: 'treatment',
-        value: 59,
-    },
-    {
-        text: 'tooth',
-        value: 32,
-    },
-    {
-        text: 'chiropractic',
-        value: 17,
-    },
-    {
-        text: 'dr',
-        value: 77,
-    },
-    {
-        text: 'relief',
-        value: 19,
-    },
-    {
-        text: 'shoulder',
-        value: 26,
-    },
-    {
-        text: 'nurse',
-        value: 17,
-    },
-    {
-        text: 'room',
-        value: 22,
-    },
-    {
-        text: 'hour',
-        value: 35,
-    },
-    {
-        text: 'wait',
-        value: 38,
-    },
-    {
-        text: 'hospital',
-        value: 11,
-    },
-    {
-        text: 'eye',
-        value: 13,
-    },
-    {
-        text: 'test',
-        value: 10,
-    },
-    {
-        text: 'appointment',
-        value: 49,
-    },
-    {
-        text: 'medical',
-        value: 19,
-    },
-    {
-        text: 'question',
-        value: 20,
-    },
-    {
-        text: 'office',
-        value: 64,
-    },
-    {
-        text: 'care',
-        value: 54,
-    },
-    {
-        text: 'minute',
-        value: 29,
-    },
-    {
-        text: 'waiting',
-        value: 16,
-    },
-    {
-        text: 'patient',
-        value: 59,
-    },
-    {
-        text: 'health',
-        value: 49,
-    },
-    {
-        text: 'alternative',
-        value: 24,
-    },
-    {
-        text: 'holistic',
-        value: 19,
-    },
-    {
-        text: 'traditional',
-        value: 20,
-    },
-    {
-        text: 'symptom',
-        value: 29,
-    },
-    {
-        text: 'internal',
-        value: 17,
-    },
-    {
-        text: 'prescribed',
-        value: 26,
-    },
-    {
-        text: 'acupuncturist',
-        value: 16,
-    },
-    {
-        text: 'pain',
-        value: 64,
-    },
-    {
-        text: 'integrative',
-        value: 10,
-    },
-    {
-        text: 'herb',
-        value: 13,
-    },
-    {
-        text: 'sport',
-        value: 22,
-    },
-    {
-        text: 'physician',
-        value: 41,
-    },
-    {
-        text: 'herbal',
-        value: 11,
-    },
-    {
-        text: 'eastern',
-        value: 12,
-    },
-    {
-        text: 'chinese',
-        value: 32,
-    },
-    {
-        text: 'acupuncture',
-        value: 45,
-    },
-    {
-        text: 'prescribe',
-        value: 14,
-    },
-    {
-        text: 'medication',
-        value: 38,
-    },
-    {
-        text: 'western',
-        value: 35,
-    },
-    {
-        text: 'sure',
-        value: 38,
-    },
-    {
-        text: 'work',
-        value: 64,
-    },
-    {
-        text: 'smile',
-        value: 17,
-    },
-    {
-        text: 'teeth',
-        value: 26,
-    },
-    {
-        text: 'pair',
-        value: 11,
-    },
-    {
-        text: 'wanted',
-        value: 20,
-    },
-    {
-        text: 'frame',
-        value: 13,
-    },
-    {
-        text: 'lasik',
-        value: 10,
-    },
-    {
-        text: 'amazing',
-        value: 41,
-    },
-    {
-        text: 'fit',
-        value: 14,
-    },
-    {
-        text: 'happy',
-        value: 22,
-    },
-    {
-        text: 'feel',
-        value: 49,
-    },
-    {
-        text: 'glasse',
-        value: 19,
-    },
-    {
-        text: 'vision',
-        value: 12,
-    },
-    {
-        text: 'pressure',
-        value: 16,
-    },
-    {
-        text: 'find',
-        value: 29,
-    },
-    {
-        text: 'experience',
-        value: 59,
-    },
-    {
-        text: 'year',
-        value: 70,
-    },
-    {
-        text: 'massage',
-        value: 35,
-    },
-    {
-        text: 'best',
-        value: 54,
-    },
-    {
-        text: 'mouth',
-        value: 20,
-    },
-    {
-        text: 'staff',
-        value: 64,
-    },
-    {
-        text: 'gum',
-        value: 10,
-    },
-    {
-        text: 'chair',
-        value: 12,
-    },
-    {
-        text: 'ray',
-        value: 22,
-    },
-    {
-        text: 'dentistry',
-        value: 11,
-    },
-    {
-        text: 'canal',
-        value: 13,
-    },
-    {
-        text: 'procedure',
-        value: 32,
-    },
-    {
-        text: 'filling',
-        value: 26,
-    },
-    {
-        text: 'gentle',
-        value: 19,
-    },
-    {
-        text: 'cavity',
-        value: 17,
-    },
-    {
-        text: 'crown',
-        value: 14,
-    },
-    {
-        text: 'cleaning',
-        value: 38,
-    },
-    {
-        text: 'hygienist',
-        value: 24,
-    },
-    {
-        text: 'dental',
-        value: 59,
-    },
-    {
-        text: 'charge',
-        value: 24,
-    },
-    {
-        text: 'cost',
-        value: 29,
-    },
-    {
-        text: 'charged',
-        value: 13,
-    },
-    {
-        text: 'spent',
-        value: 17,
-    },
-    {
-        text: 'paying',
-        value: 14,
-    },
-    {
-        text: 'pocket',
-        value: 12,
-    },
-    {
-        text: 'dollar',
-        value: 11,
-    },
-    {
-        text: 'business',
-        value: 32,
-    },
-    {
-        text: 'refund',
-        value: 10,
-    },
+    { text: 'banana', value: 23 },
+    { text: 'elephant', value: 65 },
+    { text: 'computer', value: 40 },
+    { text: 'chocolate', value: 12 },
+    { text: 'library', value: 14 },
+    { text: 'butterfly', value: 37 },
+    { text: 'guitar', value: 53 },
+    { text: 'umbrella', value: 47 },
+    { text: 'restaurant', value: 54 },
+    { text: 'mountain', value: 56 },
+    { text: 'sunshine', value: 9 },
+    { text: 'pineapple', value: 52 },
+    { text: 'kangaroo', value: 29 },
+    { text: 'strawberry', value: 33 },
+    { text: 'astronaut', value: 35 },
+    { text: 'waterfall', value: 8 },
+    { text: 'rainbow', value: 62 },
+    { text: 'bicycle', value: 21 },
+    { text: 'television', value: 41 },
+    { text: 'spaceship', value: 68 },
+    { text: 'React', value: 30 },
+    { text: 'Vue', value: 16 },
+    { text: 'Angular', value: 22 },
+    { text: 'JavaScript', value: 7 },
+    { text: 'TypeScript', value: 19 },
+    { text: 'CSS', value: 23 },
+    { text: 'HTML', value: 25 },
+    { text: 'Webpack', value: 14 },
+    { text: 'Babel', value: 10 },
+    { text: 'Sass', value: 12 },
+    { text: 'Bootstrap', value: 9 },
+    { text: 'Material UI', value: 21 },
+    { text: 'Styled Components', value: 11 },
+    { text: 'Redux', value: 17 },
+    { text: 'MobX', value: 8 },
+    { text: 'GraphQL', value: 18 },
+    { text: 'REST API', value: 29 },
+    { text: 'Axios', value: 30 },
+    { text: 'Jest', value: 10 },
+    { text: 'Cypress', value: 12 },
+    { text: 'Next.js', value: 28 },
+    { text: 'Gatsby', value: 29 },
+    { text: 'Nuxt.js', value: 11 },
+    { text: 'Webpack Dev Server', value: 26 },
+    { text: 'ESLint', value: 12 },
+    { text: 'Prettier', value: 22 },
+    { text: 'Visual Studio Code', value: 7 },
+    { text: 'CodeSandbox', value: 12 },
+    { text: 'GitHub', value: 28 },
+    { text: 'Netlify', value: 7 },
+    { text: 'Vercel', value: 19 },
+    { text: 'Firebase', value: 19 },
+    { text: 'AWS Amplify', value: 18 },
+    { text: 'Google Cloud', value: 8 },
+    { text: 'Cloudinary', value: 12 },
+    { text: 'Docker', value: 11 },
+    { text: 'Kubernetes', value: 21 },
+    { text: 'Netlify CMS', value: 21 },
+    { text: 'Strapi', value: 21 },
+    { text: 'React Native', value: 16 },
+    { text: 'Node.js', value: 27 },
+    { text: 'GraphQL', value: 22 },
+    { text: 'Next.js', value: 28 },
+    { text: 'React', value: 30 },
+    { text: 'Responsive design', value: 14 },
+    { text: 'Redux', value: 8 },
+    { text: 'TypeScript', value: 17 },
+    { text: 'SEO', value: 12 },
+    { text: 'Unit testing', value: 15 },
+    { text: 'WebGL', value: 19 },
+    { text: 'Tailwind CSS', value: 8 },
+    { text: 'Angular', value: 26 },
+    { text: 'Material-UI', value: 6 },
+    { text: 'CSS', value: 25 },
+    { text: 'Storybook', value: 12 },
+    { text: 'D3.js', value: 29 },
+    { text: 'PWA', value: 12 },
+    { text: 'Three.js', value: 25 },
+    { text: 'SPA', value: 23 },
+    { text: 'Accessibility', value: 8 },
+    { text: 'Bootstrap', value: 29 },
+    { text: 'Node.js', value: 29 },
+    { text: 'Cypress', value: 9 },
+    { text: 'End-to-end testing', value: 29 },
+    { text: 'Integration testing', value: 7 },
+    { text: 'HTML', value: 10 },
+    { text: 'MobX', value: 7 },
+    { text: 'Webpack', value: 9 },
+    { text: 'Sass', value: 6 },
+    { text: 'RxJS', value: 27 }
 ];
 
 export const loadingWords = [
     {
-        text: 'FRONTEND',
+        text: '치킨',
         key: 5
     },
     {
-        text: 'UNIQUE',
+        text: '피자',
         key: 4
     },
     {
-        text: 'SMART',
+        text: '햄버거',
         key: 3
     },
     {
-        text: 'LOVE',
+        text: '곱창',
         key: 2
     },
     {
-        text: 'YOU',
+        text: '삼겹살',
         key: 1
     },
 ]
