@@ -11,7 +11,6 @@ function WordCloud({ scrollMove }: { scrollMove: number }) {
   const [rotationValue, setRotationValue] = useState<number>(3)
   const browserSizeValue = useSelector((state: BrowserSizeState) => state.browserSize.size)
   useEffect(() => {
-    console.log(Math.ceil((1800 - browserSizeValue.width) / 100) * 100)
     let newWordSize: number
     let newRotationValue: number
     if (browserSizeValue.width > 2300) {

@@ -78,7 +78,7 @@ function IntroduceDetail() {
                 <DetailMainContainer>
                     <DetailMainText ref={handleRef}>
                         <p><span>'상상하는 모든 것을 구현해보자'</span>, 처음으로 개발을 시작할 때부터 마음먹었던 다짐으로, 아직도 저를 불타오르게 하는 문장이기도 합니다.</p>
-                        <p>끊임없는 성장을 도모하며, 목표를 이루는 그날까지 포기하지 않고 굳건히 달려나가보겠습니다.</p>
+                        <p>끊임없는 성장을 도모하여, 목표를 이루는 그날까지 포기하지 않고 굳건히 달려나가보겠습니다.</p>
                     </DetailMainText>
                 </DetailMainContainer>
             </IntroduceTextContainer>

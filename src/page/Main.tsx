@@ -56,7 +56,6 @@ function Main() {
             }
             return newTranslate
         })
-        console.log(projectGuideTranslate)
     },[scrollValue])
 
     const scrollHandler = () => {
