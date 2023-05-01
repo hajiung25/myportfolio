@@ -4,13 +4,13 @@ export const HeaderContainer = styled.div`
     position: fixed;
     height: 100vh;
     width: 150px;
-    background-color : transparent;
     display: flex;
     align-items: center;
     z-index: 100;
     background-color: transparent;
     color: rgba(255,255,255,0.5);
     border: 1px solid rgba(255,255,255,0.1);
+    font-size: 2rem;
     transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
     :hover{
         background-color: var(--color1);

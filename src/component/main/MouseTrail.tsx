@@ -5,8 +5,8 @@ function MouseTrail(props: { setHandleMouseMoveState: any }) {
   const canvasRef = useRef(null);
   const [ctx, setCtx] = useState<any>(null);
   const [trail, setTrail] = useState<any>([]);
-  const [canvasWidth, setCanvasWidth] = useState<any>(0);
-  const [canvasHeight, setCanvasHeight] = useState<any>(0);
+  const [canvasWidth, setCanvasWidth] = useState<number>(0);
+  const [canvasHeight, setCanvasHeight] = useState<number>(0);
   const [isMouseOut, setIsMouseOut] = useState<boolean>(true)
 
   const MAX_TRAIL_LENGTH = 20;

@@ -24,6 +24,10 @@ export const SkillCube = styled.div.attrs<CubeType>((props)=>({
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none;
+    &.apear {
+        transform: rotateX(30deg) rotateY(20deg);
+    }
+    transition: all 0.5s;
 `
 
 interface SkillType {
@@ -37,15 +41,16 @@ export const Skill = styled.div.attrs<SkillType>((props)=>({
     }
 }))<SkillType>`
     position: absolute;
-    background-color: white;
-    color: black;
+    background-color: var(--color2);
+    color: rgba(255,255,255);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 3.5rem;
-    font-weight: 600;
-    border: 2px solid black;
+    font-weight: 700;
+    border: 2px solid rgba(255,255,255);
+    transform-style: preserve-3d;
     &.none{
         display: none;
     }
@@ -102,4 +107,26 @@ export const DownSkill = styled(Skill).attrs<{cubeSize: number}>((props=>({
 })))`
     width: 100%;
     height: 100%;
+`
+
+export const SikillImg = styled.img`
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    -webkit-user-drag: none;
+    z-index: 0;
+    opacity: 0.3;
+    transform: translateZ(1px);
+    :hover{
+        transform: translateZ(20px);
+        opacity: 1;
+    }
+    transition: all 0.5s;
+`
+
+export const SkillText = styled.div`
+    position: absolute;
+    z-index: 1;
+    transition: all 0.5s;
 `

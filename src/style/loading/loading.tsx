@@ -3,9 +3,10 @@ import styled from "styled-components"
 export const LoadingContainer = styled.div`
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;;
     top: 0;
     left: 0;
+    z-index: 100000;
 `
 
 export const LoadingMessageContainer = styled.div<{ delaySecond: number }>`

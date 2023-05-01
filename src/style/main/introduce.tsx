@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const IntroduceContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 220vh;
+    height: 250vh;
 `
 
 export const IntroduceMainHomeContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,12 +26,12 @@ interface textImProps {
 export const TextIm = styled.div.attrs<textImProps>((props) => ({
     style : {
         transform: `translateY(${props.scrollMove}%)` || 'translate(0)',
-        opacity: (props.scrollMove * -2 < 30 ? 1 : 1 + props.scrollMove * 0.05) || 0,
+        opacity: (props.scrollMove * -2 < 30 ? 1 : 1 + props.scrollMove * 0.03) || 0,
     }
     }
     ))<textImProps>`
     transition: all 1s ;
-    font-size: 150px;
+    font-size: 20rem;
     font-weight: 700;
     text-align: center;
     width: 500px;

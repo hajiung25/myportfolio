@@ -88,6 +88,16 @@ body {
   background-color: var(--color3);
   color: var(--color9);
   font-size: 62.5%;
+  @media (min-width:320px) and (max-width:768px){
+    font-size: 25%;
+  }
+  @media (min-width:768px) and (max-width:1440px){
+    font-size: 35%;
+  }
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 html {
   /* ************************************************************

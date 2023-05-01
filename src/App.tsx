@@ -17,9 +17,9 @@ function App() {
   }, [])
   return (
     <>
-    {
+    {/* {
       isLoading ? <Loading></Loading> : null
-    }
+    } */}
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />

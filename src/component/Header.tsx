@@ -13,9 +13,9 @@ function Header() {
     {
         text: 'projects'
     },
-    {
-        text: 'blog'
-    },
+    // {
+    //     text: 'contect'
+    // },
     ]
     return (
         <HeaderContainer>

@@ -5,16 +5,16 @@ import { ReactWordcloudContainer } from "../../../style/main/wordcloud";
 import { useSelector } from "react-redux";
 import { BrowserSizeState } from "../../../redux/reducers/reducer";
 
-function WordCloud({ setIsClickMyname, scrollMove }: { setIsClickMyname: any, scrollMove: number }) {
-  const [changeWordcloud, setChangeWordcloud] = useState<boolean>(true)
+function WordCloud({ scrollMove }: { scrollMove: number }) {
+  const [changeWordcloud, setChangeWordcloud] = useState<string>('307')
   const [maxWordSize, setMaxWordSize] = useState<number>(200)
   const [rotationValue, setRotationValue] = useState<number>(3)
   const browserSizeValue = useSelector((state: BrowserSizeState) => state.browserSize.size)
   useEffect(() => {
-    console.log(Math.ceil((1800- browserSizeValue.width) / 100) * 100)
-    let newWordSize:number
-    let newRotationValue:number
-    if (browserSizeValue.width > 2000) {
+    console.log(Math.ceil((1800 - browserSizeValue.width) / 100) * 100)
+    let newWordSize: number
+    let newRotationValue: number
+    if (browserSizeValue.width > 2300) {
       newWordSize = 300
       newRotationValue = 2
     } else if (browserSizeValue.width < 900) {
@@ -22,9 +22,9 @@ function WordCloud({ setIsClickMyname, scrollMove }: { setIsClickMyname: any, sc
       newRotationValue = 2
     } else {
       const range = 200 - 80;
-      const step = range / (2000 - 900 - 1);
+      const step = range / (2300 - 900 - 1);
       const adjustedArg = browserSizeValue.width - 900;
-      newWordSize =  Math.floor(80 + (adjustedArg * step));
+      newWordSize = Math.floor(110 + (adjustedArg * step));
       newRotationValue = 3
     }
     setRotationValue(newRotationValue)
@@ -32,7 +32,7 @@ function WordCloud({ setIsClickMyname, scrollMove }: { setIsClickMyname: any, sc
   }, [browserSizeValue])
   const options: OptionsProp = {
     colors: ["#fff"],
-    deterministic: changeWordcloud,
+    deterministic: true,
     enableTooltip: false,
     fontFamily: "impact",
     fontSizes: [1, maxWordSize],
@@ -43,7 +43,7 @@ function WordCloud({ setIsClickMyname, scrollMove }: { setIsClickMyname: any, sc
     rotations: rotationValue,
     scale: "log",
     spiral: 'archimedean',
-    randomSeed: '307',
+    randomSeed: changeWordcloud,
     transitionDuration: 1000,
   }
 
@@ -55,12 +55,14 @@ function WordCloud({ setIsClickMyname, scrollMove }: { setIsClickMyname: any, sc
         callbacks={{
           getWordColor: (word) => (word.value > 100 ? "blue" : "rgba(255,255,255,0.5)"),
           onWordClick: (e) => {
-            console.log(e)
-            if (e.text === 'HAJIUNG') {
-              setIsClickMyname(true)
-            } else {
-              setChangeWordcloud(prev => !prev)
-            }
+            setChangeWordcloud(prev => {
+              if(prev !== '307'){
+                return '307'
+              }else{
+                const newValue = prev + `${Math.floor(Math.random() * 10) + 1}`;
+                return newValue
+              }
+            })
           },
         }}
       />
