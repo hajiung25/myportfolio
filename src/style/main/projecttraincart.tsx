@@ -59,7 +59,7 @@ export const ProjectTailContainer = styled.div`
 
 export const GithubURLimg = styled.div`
     font-size: 3rem;
-    margin-right: 50px;
+    margin-right: 5rem;
 `   
 
 export const WebsiteURLimg = styled.div`
