@@ -28,7 +28,7 @@ function Skills() {
       'React의 컴포넌트, 상태 관리, 생명주기 메서드 등의 기본 개념을 이해하여, React 컴포넌트에서 Redux를 사용하는 방법을 익혔습니다.',
       'Redux의 비효율적인 보일러 플레이트 코드에 대해 이해하고, 전역 상태 관리와 비동기 API 처리를 할 수 있습니다.',
       '',
-      'CSS-in-JS의 개념을 이해하고, 컴포넌트 디자인과 props를 통한 스타일링 조건부 처리, 그에 따른 메모리 최적화 방법을 이해하고 있습니다.:',
+      'CSS-in-JS의 개념을 이해하고, 컴포넌트 디자인과 props를 통한 스타일링 조건부 처리, 그에 따른 메모리 최적화 방법을 이해하고 있습니다',
       '',
       'HTTP 메서드(GET, POST, PUT, DELETE 등), 요청/응답 헤더, 바디 등을 이해하며 Promise의 then, catch 등의 메서드와 await ascyc 함수를 능숙하게 다룰 수 있습니다.'],
     imgs: ['/img/redux.svg','/img/reduxToolkit.png','','/img/styledComponent.jpg','','/img/axios.jpg'],

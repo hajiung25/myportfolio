@@ -8,7 +8,7 @@ interface ProjectPropsType {
   projectWidth?: string,
   gitHubLink?: string,
   homePageLink?: string,
-  setOpenVideoDetail: (e:any)=>void,
+  setOpenVideoDetail: (e: any) => void,
 }
 
 function ProjectTrainCart({ projectNameValue, projectVideoURL, projectWidth, gitHubLink, homePageLink, setOpenVideoDetail }: ProjectPropsType) {
@@ -32,7 +32,7 @@ function ProjectTrainCart({ projectNameValue, projectVideoURL, projectWidth, git
       <ProjectCartMainContainer>
         <ProjectVideo
           onMouseEnter={handleMouseEnter}
-          onClick={()=>{setOpenVideoDetail(projectVideoURL)}}
+          onClick={() => { setOpenVideoDetail(projectVideoURL) }}
           ref={videoRef}
           src={projectVideoURL} />
         {isHover ? null : (
@@ -45,7 +45,11 @@ function ProjectTrainCart({ projectNameValue, projectVideoURL, projectWidth, git
       <ProjectTailContainer
       >
         <GithubURLimg><a href={gitHubLink} target='_blank' rel='noopener noreferrer'><BsGithub /></a></GithubURLimg>
-        <WebsiteURLimg><a href={homePageLink} target='_blank' rel='noopener noreferrer'><BsTv></BsTv></a></WebsiteURLimg>
+        {
+          homePageLink !== '' ? (
+            <WebsiteURLimg><a href={homePageLink} target='_blank' rel='noopener noreferrer'><BsTv></BsTv></a></WebsiteURLimg>
+          ) : null
+        }
       </ProjectTailContainer>
     </ProjectTrainCartContainer>
   )

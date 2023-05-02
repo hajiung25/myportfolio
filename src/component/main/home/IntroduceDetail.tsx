@@ -17,7 +17,7 @@ function IntroduceDetail() {
         key: '0'
     }, {
         title: '한국수목원정원관리원 근무',
-        days: '2021.11 ~ 2023.06',
+        days: '2021.11 ~ 2022.06',
         key: '1'
     }, {
         title: '코드스테이츠 수료',
