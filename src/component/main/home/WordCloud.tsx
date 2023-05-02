@@ -17,7 +17,7 @@ function WordCloud({ scrollMove }: { scrollMove: number }) {
       newWordSize = 300
       newRotationValue = 2
     } else if (browserSizeValue.width < 900) {
-      newWordSize = 80
+      newWordSize = 60
       newRotationValue = 2
     } else {
       const range = 200 - 80;

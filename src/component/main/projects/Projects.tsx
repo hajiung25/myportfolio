@@ -25,9 +25,9 @@ function Projects() {
     }, {
       projectNameValue: 'StackOverFlow',
       projectVideoURL: '/video/erroritOverflow.mp4',
-      gitHubLink: 'https://github.com/kirby-project-2023/carrot_project',
-      homePageLink: 'https://kirby-project-2023.github.io/carrot_project/#/',
-      projectDetailTitle: '당근 프로젝트',
+      gitHubLink: 'https://github.com/codestates-seb/seb42_pre_036',
+      homePageLink: '',
+      projectDetailTitle: '스택오버플로우 클론코딩',
     }]
   const [openVideoDetail, setOpenVideoDetail] = useState(null)
   return (

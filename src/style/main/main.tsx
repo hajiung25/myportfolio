@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
     background-color: var(--color3);
     position: absolute;
     right: 0;
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         width: 100vw;
     }
 `

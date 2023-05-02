@@ -15,9 +15,10 @@ export const SkillsContainer = styled.div.attrs<SkillsProps>((props) => ({
      display: flex;
      justify-content: space-around;
      align-items: center;
-     /* @media (min-width:320px) and (max-width:768px){
-          
-     } */
+     @media (max-width: 768px) {
+          flex-direction: column;
+          width: 100vw;
+    }
 `
 export const SkillsTextContainer = styled.div`
      width: 40%;
@@ -28,6 +29,10 @@ export const SkillsTextContainer = styled.div`
      align-items: center;
      p{
           margin-bottom: 40px;
+     }
+     @media (max-width: 768px) {
+          width: 90vw;
+          height: 30%;
      }
 `
 export const SkillsTextTitle = styled.h3`
@@ -44,7 +49,8 @@ export const SkillsTextTitle = styled.h3`
      transition: all 0.8s;
      white-space: pre;
      @media (min-width:320px) and (max-width:2168px){
-          font-size: 8rem;
+          font-size: 10rem;
+          margin: 20px 0;
      }
 `
 
@@ -70,6 +76,10 @@ export const SkillsTextMain = styled.pre`
      &.apear {
           transform: translateX(0px);
           opacity: 1;
+     }
+     @media (max-width: 768px) {
+          min-height: 100px;
+          font-size: 5rem;
      }
      
 `

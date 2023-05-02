@@ -11,12 +11,18 @@ export const HistoryMiddleLine = styled.div`
     width: 100%;
     height: 10px;
     background-color: #fff;
+    @media (max-width:768px){
+        height: 8px;
+    }
 `
 
 export const HistoryBranchContainer = styled.div`
     width: 30%;
     height: 100%;
     position: relative;
+    @media (max-width:768px){
+        width: 33%;
+    }
 `
 
 export const HistoryBranch = styled.div<HistoryBranchProps>`
@@ -27,6 +33,9 @@ export const HistoryBranch = styled.div<HistoryBranchProps>`
     left: 50%;
     transform: translate(-50%);
     top: ${porps => porps.isTop ? '50%' : '25%'};
+    @media (max-width:768px){
+        width: 8px;
+    }
 `
 
 export const HistoryTextContainer = styled.div<HistoryBranchProps>`
@@ -45,6 +54,7 @@ export const HistoryTextContainer = styled.div<HistoryBranchProps>`
 export const HistoryTitleText = styled.div`
     font-size: 3rem;
     word-break: keep-all;
+    white-space: pre;
 `
 export const HistoryDays = styled.div`
     font-size: 2rem;
@@ -61,4 +71,8 @@ export const HistoryDetailBall = styled.div<HistoryBranchProps>`
     transform: translate(-50%);
     top: ${porps => porps.isTop ? '70%' : '20%'};
     transition: all 0.5s;
+    @media (max-width:768px){
+        width: 25px;
+        height: 25px;
+    }
 `

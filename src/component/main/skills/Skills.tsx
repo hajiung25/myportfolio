@@ -117,6 +117,9 @@ const handleRef = (ref: any) => {
       </SkillsTextContainer>
       <SkillsBallContainer>
         {skillmap.map((e) => {
+          if(browserSizeValue.width < 768){
+            e.cubeSize = 100  
+          }
           return (<SkillsBall cubePosition={e.cubePosition} cubeSize={e.cubeSize} contents={e.contents} contentDetail={e.contentDetail} defaultPosition={e.defaultPosition} imgs={e.imgs} setSkillTitle={setSkillTitle} setSkillMainText={setSkillMainText}></SkillsBall>)
         })}
       </SkillsBallContainer>

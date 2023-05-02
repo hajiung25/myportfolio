@@ -14,8 +14,12 @@ export const IntroduceMainHomeContainer = styled.div`
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    @media (max-width:768px){
+        transform: rotate(90deg);
+        width: 100vw;
+        height: 100vh;
+    }
     z-index: 10;
-    overflow: hidden;
 `
 
 
@@ -59,6 +63,9 @@ export const TextIm = styled.div.attrs<textImProps>((props) => ({
             }
         }
         animation: bounce 0.5s forwards;
+    }
+    @media (max-width: 768px) {
+        width: auto;
     }
 `
 
